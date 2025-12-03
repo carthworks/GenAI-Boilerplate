@@ -3,7 +3,6 @@
 
 A clean, production-ready template for building robust Generative AI applications with modular architecture, multi-LLM support, caching, rate limiting, error handling, and prompt engineering utilities.
 
-![GenAI Project](https://github.com/honestsoul/generative_ai_project/blob/96dae125f58ede47f1bc3034790498f103903772/examples/genai_project.jpg)
 
 ---
 
@@ -24,7 +23,30 @@ A clean, production-ready template for building robust Generative AI application
 
 ---
 
-## 📁 Project Structure
+## � Visual Architecture
+
+### Folder Structure
+
+![Folder Structure](docs/folder_structure.png)
+
+### Workflow Diagram
+
+![Workflow Diagram](docs/workflow_diagram.png)
+
+The workflow shows how a user request flows through the system:
+1. **User Request** → Enters the system
+2. **LLM Client Layer** → Routes to OpenAI or Claude
+3. **Utilities Layer** → Rate limiting, caching, token counting, logging
+4. **Prompt Engineering** → Template management and few-shot learning
+5. **API Call** → Actual LLM provider API
+6. **Response Processing** → Handle and format the response
+7. **Output** → Return to user
+
+The **Config** feeds into the LLM clients, **Error Handler** monitors all layers, and **Cache** optimizes API calls.
+
+---
+
+## �📁 Project Structure
 
 ```
 generative_ai_project/
@@ -261,7 +283,7 @@ See `LICENSE`.
 
 ## 👤 Author
 
-**Brij Kishore Pandey**
+
 GitHub: [https://github.com/carthworks](https://github.com/carthworks/GenAI-Boilerplate)
 Email: [tkarthikeyan@gmail.com](mailto:tkarthikeyan@gmail.com)
 
