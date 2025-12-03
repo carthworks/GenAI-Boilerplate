@@ -49,7 +49,7 @@ The **Config** feeds into the LLM clients, **Error Handler** monitors all layers
 ## �📁 Project Structure
 
 ```
-generative_ai_project/
+GenAI-Boilerplate/
 ├── config/
 │   ├── model_config.yaml
 │   ├── prompt_templates.yaml
@@ -98,7 +98,7 @@ generative_ai_project/
 
 ```bash
 git clone https://github.com/carthworks/GenAI-Boilerplate.git
-cd generative_ai_project
+cd GenAI-Boilerplate
 ```
 
 Create a virtual environment:
